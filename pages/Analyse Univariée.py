@@ -3,7 +3,7 @@ import pandas as pd
 import plotly.express as px
 
 # --- Chargement des données ---
-df = pd.read_csv('Z:\\appsante\\air_qualité.csv', sep=';')
+df = pd.read_csv('air_qualité.csv', sep=';')
 df.columns = df.columns.str.strip()
 df['date'] = pd.to_datetime(df[['day','month','year']])
 
@@ -55,3 +55,4 @@ st.plotly_chart(fig_hist, use_container_width=True)
     # Statistiques de base
 st.write(f"Statistiques pour **{var_choice}** :")
 st.write(df[var_choice].describe().to_frame())
+
