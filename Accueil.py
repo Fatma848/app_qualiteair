@@ -11,7 +11,7 @@ import pandas as pd
 import plotly.express as px
 
 # --- Chargement des données ---
-df = pd.read_csv('Z:\\appsante\\air_qualité.csv', sep=';')
+df = pd.read_csv('air_qualité.csv', sep=';')
 df.columns = df.columns.str.strip()
 
 # --- Création de la date complète ---
@@ -38,5 +38,6 @@ La base de données contient des mesures quotidiennes comprenant :
 Cette base permet d’examiner les variations quotidiennes de la pollution et d’étudier les relations entre PM10, température et humidité sur l’ensemble de l’année 2025.  
 Les données sont représentées sous forme de séries temporelles, indicateurs statistiques, matrices de corrélation et tableaux filtrés pour faciliter l’analyse et la compréhension.
 """)
+
 
 
